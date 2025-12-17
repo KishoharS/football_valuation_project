@@ -1,0 +1,4 @@
+data_raw/
+data_clean/
+.DS_Store
+**/dataset/
