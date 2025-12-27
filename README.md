@@ -64,3 +64,7 @@
 - This project practically enables my understanding about how machiene learning actually works and what is real data science world look like. I learnt about how to train a model by without giving any target variables  *(i actually gave my model the target variables and wondered how our model is error free!!! Then i realised i shouldn't give the target variables to the model during training)*
 - This project also improves my exploration skills by enabling me to go beyond a certain limit and not just doing basic EDA with simple CSV file!!
 - Looking forward to go beyond in this data world!!
+
+## Future enhancements
+- I built this model to help new people who've come into the football world and really know nothing about how players' market value will be determined.
+- I think about building a web app which will be helpful for a end users and some of the official football clubs
