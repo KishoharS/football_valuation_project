@@ -1,7 +1,7 @@
 # Football Player Valuation
 
 ## Objectives
-  This project will mainly focuses on how player's certain factors like Age, Position, Country and so on will affect the player's market value and it'll also predict the player's market value in the future. I chose this project because obviously i'm interested in this football and that kind of stuff and also i feel like it'll describe who i am and also showcasing my skills to potential employer. Looking forward to finish this wonderful project and i think it'll be a great experience.
+  This Python based project will mainly focuses on how player's certain factors like Age, Position, Country, leagues, goals per game and assists per 90 will affect the player's market value and it'll also predict the player's market value in the future. I chose this project because obviously i'm interested in this football and that kind of stuff and also i feel like it'll describe who i am and also showcasing my skills to potential employer. Looking forward to finish this wonderful project and i think it'll be a great experience.
 
 ## Success Metric
   R2 (R square), RMSE (Root Mean Squared Error) for valuation prediction metrics.
@@ -55,9 +55,7 @@
   RMSE: 0.9750
 
 ## Future work!!
- - Going to experiment with XGBoost or CatBoost to improve predictive power.
  - Inxorporate more recent player data for higher accuracy.
- - Deploy the model using Streamlit or Flast for interactive use
  - Will dive deeper into other aspects of this dataset like clubs, transfers, game_events. and so on!!
 
 ## My learning!!
@@ -67,4 +65,4 @@
 
 ## Future enhancements
 - I built this model to help new people who've come into the football world and really know nothing about how players' market value will be determined.
-- I think about building a web app which will be helpful for a end users and some of the official football clubs
+- I think about adding some more features which will truly enhances this model like clubs which the players are currently playing, having yellow cards and red cards(in case we're predicting the market value for a defender).
