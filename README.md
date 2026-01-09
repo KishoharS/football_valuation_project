@@ -1,7 +1,7 @@
 # Football Player Valuation
 
 ## Objectives
-  This Python based project will mainly focuses on how player's certain factors like Age, Position, Country, leagues, goals per game and assists per 90 will affect the player's market value and it'll also predict the player's market value in the future. I chose this project because obviously i'm interested in this football and that kind of stuff and also i feel like it'll describe who i am and also showcasing my skills to potential employer. Looking forward to finish this wonderful project and i think it'll be a great experience.
+  This end-to-end Python based project will mainly focuses on how player's certain factors like Age, Position, Country, leagues, goals per game and assists per 90 will affect the player's market value and it'll also predict the player's market value in the future. I chose this project because obviously I'm interested in this football and that kind of stuff and also i feel like it'll describe who i am and also showcasing my skills to potential employer. Looking forward to finish this wonderful project and i think it'll be a great experience.
 
 ## Success Metric
   R2 (R square), RMSE (Root Mean Squared Error) for valuation prediction metrics.
@@ -16,6 +16,7 @@
   3) Feature selection
   4) Model building
   5) Evaluation and insights
+  6) App building
 
 ### 1) Data cleaning:
  -  Cleaned over 1000000 fields of combined data from the required CSV files ('players.csv', 'appearances.csv', 'player_valuations.csv') for this specific project.
@@ -48,18 +49,18 @@
   6) Scikit-learn
 
 ## Results Summary
- Best model: Random Forest Regressor
- Matrics:
+ Best model: XGBoost
+ Metrics:
   R² Score: 0.6230
   MAE: 0.7453
   RMSE: 0.9750
 
 ## Future work!!
- - Inxorporate more recent player data for higher accuracy.
- - Will dive deeper into other aspects of this dataset like clubs, transfers, game_events. and so on!!
+ - Incorporate more recent player data for higher accuracy.
+ - Will dive deeper into other aspects of this dataset like clubs, transfers, game_events, and so on.
 
 ## My learning!!
-- This project practically enables my understanding about how machiene learning actually works and what is real data science world look like. I learnt about how to train a model by without giving any target variables  *(i actually gave my model the target variables and wondered how our model is error free!!! Then i realised i shouldn't give the target variables to the model during training)*
+- This project practically enables my understanding about how machiene learning actually works and what is real data science world look like. I learnt about how to train a model by without giving any target variables  *(i actually gave my model the target variables and wondered how our model is error free!! Then i realised i shouldn't give the target variables to the model during training)*
 - This project also improves my exploration skills by enabling me to go beyond a certain limit and not just doing basic EDA with simple CSV file!!
 - Looking forward to go beyond in this data world!!
 
