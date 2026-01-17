@@ -1,70 +1,40 @@
-# Football Player Valuation
+# ⚽ Smart Scout Dashboard
 
-## Objectives
-  This project will mainly focuses on how player's certain factors like Age, Position, Country and so on will affect the player's market value and it'll also predict the player's market value in the future. I chose this project because obviously i'm interested in this football and that kind of stuff and also i feel like it'll describe who i am and also showcasing my skills to potential employer. Looking forward to finish this wonderful project and i think it'll be a great experience.
+A comprehensive football analytics portfolio project that combines **Machine Learning Valuation** with **Transfer Market Analysis** and **Player Performance Profiling**.
 
-## Success Metric
-  R2 (R square), RMSE (Root Mean Squared Error) for valuation prediction metrics.
+## Features
 
-## Dataset
-  Kaggle Dataset link: https://www.kaggle.com/datasets/davidcariboo/player-scores/code
+### 1. Market Value Estimator (`Home.py`)
+Predicts a player's current market value using a Machine Learning model (XGBoost/Linear Regression) based on their age, league, stats, and nationality.
 
-## Process Overview
-  Project's structure of process is as follows:
-  1) Data cleaning
-  2) EDA and Feature enginnering
-  3) Feature selection
-  4) Model building
-  5) Evaluation and insights
+### 2. Transfer Market Analysis (`pages/2_Transfer_Market.py`)
+*   **Valuation History:** Interactive line chart showing market value trends over time.
+*   **Fee vs. Value:** Visual comparison of actual transfer fees paid vs. estimated value at the time.
+*   **ROI Calculator:** Tracks total career transfer fees.
 
-### 1) Data cleaning:
- -  Cleaned over 1000000 fields of combined data from the required CSV files ('players.csv', 'appearances.csv', 'player_valuations.csv') for this specific project.
- -  Handled various fields of missing values, removed duplicate data, adding some features into our dataset.
- -  Standardize the data types.
- -  Removed fields which are not necessary for this project (like past players who are retired, above age 40, and some more criteria)
- -  Standardize the competition id for the model to predict.
+### 3. Player Performance Profile (`pages/1_Player_Profile.py`)
+*   **Scout Radar:** Radar chart comparing Goals, Assists, and Discipline per 90 mins against benchmarks.
+*   **Career Trajectory:** Season-by-season goals and assists.
+*   **Event Analysis:** Breakdown of match events (Goals, Cards, Substitutions).
 
-### 2) EDA and Feature engineering:
- -  Explored correlations,distributions, and created meaningful features.
+## Installation
 
-### 3) Feature selection:
- -  Identified the most relevant predictors impacting market value.
- -  Retained the most influential features that impact the market value analysis.
+1.  Clone the repository.
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3.  Run the app:
+    ```bash
+    streamlit run Home.py
+    ```
 
-### 4) Model building
- -  Split the dataset into training and testing sets to evaluate.
- -  Tuned hyperparameters and cross-validated models to achieve the best performance balance.
+## Data Sources
+*   **Transfermarkt (via Kaggle):** Valuations, Transfers, and Player metadata.
+*   **Game Events:** Granular match logs for performance analysis.
 
-### 5) Evaluation and insights
- -  Evaluated models using R², MAE, and RMSE metrics.
- -  Interpreted results to understand which features most strongly influence player valuation.
-
- ## Tools and Libraries
-  1) Python
-  2) Pandas
-  3) Numpy
-  4) Seaborn
-  5) Matplotlib
-  6) Scikit-learn
-
-## Results Summary
- Best model: Random Forest Regressor
- Matrics:
-  R² Score: 0.6230
-  MAE: 0.7453
-  RMSE: 0.9750
-
-## Future work!!
- - Going to experiment with XGBoost or CatBoost to improve predictive power.
- - Inxorporate more recent player data for higher accuracy.
- - Deploy the model using Streamlit or Flast for interactive use
- - Will dive deeper into other aspects of this dataset like clubs, transfers, game_events. and so on!!
-
-## My learning!!
-- This project practically enables my understanding about how machiene learning actually works and what is real data science world look like. I learnt about how to train a model by without giving any target variables  *(i actually gave my model the target variables and wondered how our model is error free!!! Then i realised i shouldn't give the target variables to the model during training)*
-- This project also improves my exploration skills by enabling me to go beyond a certain limit and not just doing basic EDA with simple CSV file!!
-- Looking forward to go beyond in this data world!!
-
-## Future enhancements
-- I built this model to help new people who've come into the football world and really know nothing about how players' market value will be determined.
-- I think about building a web app which will be helpful for a end users and some of the official football clubs
+## Tech Stack
+*   **Frontend:** Streamlit
+*   **Viz:** Plotly
+*   **ML:** Scikit-Learn
+*   **Data:** Pandas
